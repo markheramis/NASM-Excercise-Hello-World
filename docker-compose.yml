@@ -1,0 +1,10 @@
+version: "3.5"
+services:
+  nasm:
+    container_name: nasm
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: nasm/hello
+    volumes:
+      - ./src:/code
